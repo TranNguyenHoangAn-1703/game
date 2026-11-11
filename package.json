@@ -1,0 +1,23 @@
+{
+  "name": "gunny-clone",
+  "version": "1.0.0",
+  "description": "Game bắn súng theo lượt kiểu Gunny, chơi online qua Socket.IO",
+  "type": "module",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "test": "node test/logic.js && node test/smoke.js",
+    "test:logic": "node test/logic.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "socket.io": "^4.7.5"
+  },
+  "devDependencies": {
+    "socket.io-client": "^4.7.5"
+  }
+}
